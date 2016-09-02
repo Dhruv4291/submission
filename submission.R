@@ -80,7 +80,7 @@ varImpPlot(fit)
 # Now let's make a prediction and write a submission file
 Prediction <- predict(fit, test)
 submit <- data.frame(PassengerId = test$PassengerId, Survived = Prediction)
-write.csv(submit, file = "firstforest.csv", row.names = FALSE)
+write.csv(submit, file = "firstforest(not final submission).csv", row.names = FALSE)
 
 # Build condition inference tree Random Forest
 set.seed(415)
